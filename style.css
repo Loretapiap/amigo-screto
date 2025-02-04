@@ -1,5 +1,6 @@
 :root {
     --color-primary: #4B69FD;
+    --color-primary-hover: #3956e6;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
@@ -89,6 +90,8 @@ body {
 
 .button-container {
     width: 300px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -105,7 +108,7 @@ body {
 }
 
 /* Estilos de botón */
-button {
+button:not(.button-remove, .button-copy) {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -113,6 +116,41 @@ button {
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+}
+
+.button-remove {
+    color: var(--color-button);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.button-remove:hover {
+    color: var(--color-button-hover);
+    cursor: pointer;
+}
+
+.button-clear {
+    margin-top: 10px;
+}
+
+.button-copy {
+    padding: 6px 9px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    background-color: var(--color-primary);
+    color: white;
+    outline: none;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.button-copy:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-hover);
 }
 
 .button-add {
@@ -159,4 +197,9 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
 }
