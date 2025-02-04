@@ -20,6 +20,14 @@
 
 ---
 
+## Demo en vivo 🚀
+
+¡Prueba la aplicación directamente en tu navegador!  
+![Vista previa](https://loretapiap.github.io/amigo-screto/assets/captura.png)  
+👉 [Ver en GitHub Pages](https://loretapiap.github.io/amigo-screto/)
+
+---
+
 ## Cómo usar 🚀
 
 1. **Clona el repositorio**:
